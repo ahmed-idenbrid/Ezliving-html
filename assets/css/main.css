@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
  --primaryClrOrange:#F39200;
+ --primaryClrYellow:#F6BD00;
  --primaryClrGrey:#7F7C79;
+ --primaryClrLightGrey:#C8C8C8;
  --secondaryClrblue:#136FB5;
  --secondaryClrBlack:#000000;
  --secondaryClrLB:#232F3E;
@@ -14,6 +16,7 @@
   list-style: none;
   scroll-behavior: smooth;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 html,body {
     background-color: #F6F6F6;
@@ -422,4 +425,131 @@ color: var(--whiteColor);
     color: #4A4A4A;
     margin-left: 20px;
     padding: 30px 0px;
+}
+/* REVIEW-PAGE */
+.productReviewContainer
+{
+    background-color: white;
+}
+.productReviewHeader > div
+{
+    display: flex;
+}
+.productReviewHeader > div > img
+{
+    width: 137px; 
+    min-height: 123px;  
+    border-radius: 17px;
+}
+.productReviewHeader > div > div > h2
+{
+    font-size: 28px;
+    color: var(--primaryClrOrange);
+}
+.productReviewHeader > div > div > h3
+{
+    font-size: 19px;
+    color: var(--primaryClrLightGrey);
+    font-style: italic;
+}
+.productReviewData
+{
+    display: flex;
+    align-items: center;
+}
+.fa-star
+{
+    color: var(--primaryClrYellow);
+}
+.productReviewData > h2
+{
+    font-size: 20px;
+    margin: 0;
+}
+.activity
+{
+    display: flex;
+    align-items: center;
+}
+.activityIcon
+{
+    border: 1px solid #7070701A;
+    border-radius: 100%;
+    padding: 8px 12px;
+}
+.activityIcon > i
+{
+    color: var(--primaryClrLightGrey);
+}
+.productUser
+{
+    display: flex;
+    justify-content: space-between;
+}
+.productUserPhoto > img
+{
+    width: 50px;
+    border-radius: 100%;
+}
+.productUserDetails
+{
+    display: flex;
+}
+
+.productUserDescription,.productReviewComment > p
+{
+    font-size: 14px;
+    color: var(--primaryClrLightGrey);
+}
+.productUserLikes
+{
+    color:var(--primaryClrLightGrey)
+}
+.productReviewGalleryImg
+{
+    width: 96px;
+    min-height: 96px;
+    border-radius: 17px;
+}
+.customRowMain
+{
+    display: flex;
+}
+.customRow
+{
+    display: flex;
+}
+.customCol
+{
+    margin-inline:5px;
+}
+/* USER-PROFILE-PAGE */
+.userProfileDetails
+{
+    background-color: var(--whiteColor);
+}
+.userProfilePhoto
+{
+    width: 119px;
+    min-height: 119px;
+    border: 3px solid var(--whiteColor);
+    border-radius: 100%;
+}
+.userProfileTitle
+{
+    display: flex;
+    justify-content: space-between;
+    color: var(--primaryClrOrange);
+    font-size: 18px;
+    border-bottom: 1px solid var(--primaryClrOrange);
+}
+.userDetailAttribute
+{
+    font-size: 13px;
+    color: var(--primaryClrLightGrey);
+}
+.userDetailData
+{
+    font-size: 15px;
+    color: var(--secondaryClrBlack);
 }
