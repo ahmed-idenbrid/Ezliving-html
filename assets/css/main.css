@@ -177,6 +177,9 @@ html,body {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.5);
 }
+.EzNewComer>.detailInfo>a, .EzPartner>.detailInfo>a, .EzFeatured>.detailInfo>a{
+    color: var(--whiteColor);
+}
 .EzPartner{
     height: auto;
     align-items: center;
