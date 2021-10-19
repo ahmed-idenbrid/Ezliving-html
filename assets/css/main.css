@@ -254,18 +254,18 @@ border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 50px;
+    padding: 100px 190px 100px 100px !important;
 }
-.CredentialsFeilds>.signInTitle{
+.CredentialsFeilds>.signInTitle, .CredentialsFeilds>.signUpTitle {
 font-size: 35px;
 font-weight: 600;
-margin: 0px;
+margin: 5px;
 color: #4A4A4A;
 }
 .CredentialsFeilds>.welcomeTitle{
 font-size: 25px;
 font-weight: 500;
-margin: 0px;
+margin:0px;
 color: #4A4A4A;
 }
 .CredentialsFeilds>.MessagePara{
@@ -275,10 +275,72 @@ color: var(--primaryClrGrey);
 }
 .AuthFeilds{
     border: none;
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    color: #BEBEBE;
+    font-size: 17px;
 }
-.CredentialsFeilds>h1, .CredentialsFeilds>h4, .CredentialsFeilds>p, .CredentialsFeilds>form{
+.iAm{
+color: #BEBEBE;
+margin: 0px;
+}
+.AuthRadioButtons{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.indiviualsLabel, .businessLabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: var(--whiteColor);
+    box-sizing: border-box;
+    font-size: 600;
+    font-size: 24px;
+
+}
+.indiviualsLabel>i, .businessLabel>i{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 100px;
+    color: var(--primaryClrOrange);
+    background-color: rgba(#F39200, #F39200, #F39200, 0.5);
+}
+#indiviualsFeild[type="radio"]:checked+label,
+#businessLabel[type="radio"]:checked+label
+ {
+    box-shadow: 0px 0px 10px 0px var(--primaryClrGrey);
+    border:3px solid var(--primaryClrOrange); 
+}
+.SubmitButtonAuth{
+    display: block;
+    border: none;
+    color: var(--whiteColor);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color:var(--primaryClrOrange);
+    padding: 15px 50px;
+    border-radius: 25px;
+    text-align: center;
+    margin:50px auto;
+    box-shadow: 0px 0px 10px 0px var(--primaryClrOrange);
+}
+.SubmitButtonAuth:focus{
+outline: none;
+border: none;
+
+}
+/* .CredentialsFeilds>h1, .CredentialsFeilds>h4, .CredentialsFeilds>p, .CredentialsFeilds>form{
     padding-left: 80px;
-}
+} */
 
 .TextMessage>h2, .TextMessage>p{
 width: 70%;

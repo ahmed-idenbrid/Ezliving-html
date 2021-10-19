@@ -21,6 +21,10 @@
     .MyfavoruiteItems{
         justify-content: space-between;
     }
+    .CredentialsFeilds{
+    justify-content: center;
+    padding: 20px !important;
+    }
 }
 
 @media screen and (min-width:769px) {

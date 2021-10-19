@@ -15,21 +15,62 @@
 </head>
 
 <body>
+    <!-- navbar start -->
+    <div class="NavBarContainer containe">
+        <a href="../pages/index.html">
+            <figure class="LogoCompany v-on-d" style="background-image: url('../assets/img/logo/ez_living_logo_no background.png');"></figure>
+        </a>
+        <a href="../pages/index.html">
+            <figure class="LogoCompany v-on-m" style="background-image: url('../assets/img/logo/Favicon.png');"></figure>
+        </a>
+        <div class="NavItems">
+            <ul class="SocialIcons">
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <RiWhatsappFill /> -->
+                        <i class="fab fa-whatsapp"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <IoLogoInstagram /> -->
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <GrFacebookOption /> -->
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <ImPhone /> -->
+                        <i class="fas fa-phone-alt"></i>
+                    </a></li>
+            </ul>
+            <ul class="BkMrkPrfLst h-on-m">
+                <li><a href="../pages/myfavourite.html" rel="noopener noreferrer">
+                        <!-- <ImAddressBook /> -->
+                        <i class="fas fa-address-book"></i>
+                    </a></li>
+                <li><span></span></li>
+                <li><a href="../Auth/register.html" rel="noopener noreferrer">
+                        <!-- <CgProfile /> -->
+                        <i class="far fa-user"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
 
+    <!-- navbar end -->
     <div class="row no-gutters LoginContainer">
         <div class="col-12 col-md-6 TextMessage h-on-m">
             <h2>We'd love to here from you!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos voluptas doloribus, modi voluptate alias voluptatum est voluptatem saepe officiis?</p>
         </div>
         <div class="col-12 col-md-6 CredentialsFeilds">
-            <h1>Login</h1>
-            <h4>Welcome at EzLiving</h4>
-            <p>we are happy to see you again!</p>
+            <p class="signInTitle">Login in</p>
+            <p class="welcomeTitle">Welcome at EzLiving</p>
+            <p class="MessagePara">we are happy to see you again!</p>
             <form action="">
                 <div class="form-group">
-                    <input type="phone">
+                    <input type="phone" placeholder="Mobile Number" class="AuthFeilds">
                 </div>
-                <button>Send OTP</button>
+                <button class="SubmitButtonAuth">Send OTP</button>
             </form>
         </div>
     </div>
