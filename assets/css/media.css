@@ -1,0 +1,45 @@
+@media screen and (max-width:769px) {
+    .v-on-d{    
+        display: none;
+    }
+    .h-on-m{    
+        display: none;
+    }
+    .v-on-m{    
+        display: block;
+    }
+    .LogoCompany {
+        height: 60px;
+        width: 60px;
+    }
+    .SocialIcons {
+        width: 160px;
+    }
+    .SocialIcons>li {
+        font-size: 26px;
+    }
+    .MyfavoruiteItems{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .v-on-d{    
+        display: block;
+    }
+    .v-on-m{    
+        display: none;
+    }
+    .tabsComponents{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:993px) {
+    
+}
+@media screen and (max-width:1466px) {
+   
+}
+@media screen and (min-height:1050px) {
+   
+}
