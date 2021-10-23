@@ -1009,3 +1009,6 @@ body {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
+.css{
+    font-variant: unset;
+}
