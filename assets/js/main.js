@@ -64,6 +64,29 @@ var swiper = new Swiper(".EzNewComerSwiper", {
     },
   },
 });
+
+var swiper = new Swiper(".EzUserMyReviewSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    1366: {
+      slidesPerView:4,
+      spaceBetween: 20,
+    },
+  },
+});
 var swiper = new Swiper(".EzUserFavouriteSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,

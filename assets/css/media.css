@@ -25,6 +25,40 @@
     justify-content: center;
     padding: 20px !important;
     }
+    /* MY_REVIEW_PAGE */
+    .productReviewImg,.activity
+    {
+        display: none;
+    }
+    .productReviewContainer
+    {
+        padding: 20px;
+    }
+    .productUserLikes
+    {
+        font-size: 10px;
+        min-width: 80px;
+    }
+    .productUserLikes > i
+    {
+        font-size: 16px;
+        color: var(--primaryClrOrange);
+    }
+    .approvedLikes
+    {
+        font-size: 14px;
+        font-style: italic;
+        color: var(--primaryGreen);
+    }
+    .productUserDescription,.productReviewGallery
+    {
+        display: none;
+    }
+    .productUserDescriptionMbl,.productReviewGalleryMobile
+    {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width:769px) {
@@ -46,89 +80,4 @@
 }
 @media screen and (min-height:1050px) {
    
-}
-.userDetailContainer,.userReviewContainer
-{
-    background-color: var(--whiteColor);
-}
-.productUserPhotoa
-{
-    width: 119px;
-    min-height: 119px;
-    border: 3px solid var(--whiteColor);
-    border: 3px solid var(--primaryClrOrange);
-    border-radius: 100%;
-}
-.userProfileTitle,.userReviewTitle
-{
-    display: flex;
-    justify-content: space-between;
-    color: var(--whiteColor);
-}
-/* {
-    font-size: 15px;
-    color: var(--secondaryClrBlack);
-} */
-.editableAttribute
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.editableAttribute > button
-{
-    background: none;
-    color: var(--primaryClrOrange);
-    border: none;
-}
-.userReviewCard
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    box-shadow: 10px 0px 19px 15px rgba(0,0,0,0.05);
-    -webkit-box-shadow: 10px 0px 19px 10px rgba(0,0,0,0.05);
-    -moz-box-shadow: 10px 0px 19px 10px rgba(0,0,0,0.05);
-}
-.userFavouriteContainer
-{
-    overflow: hidden;
-}
-.userReviewCardData
-{
-    display: flex;
-    align-items: center;
-}
-.userReviewCardData > div > img
-{
-    border-radius: 17px;
-    width: 122px;
-    height: 114px;
-}
-.userReviewCardData > div  > h6
-{
-    font-size: 18px;
-}
-.userReviewCardData > div  > p
-{
-    color: var(--primaryClrLightGrey);
-    font-size: 14px;
-}
-.userReviewCardRating
-{
-    display: flex;
-}
-.uploadPhoto
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    min-height: 40px;
-    border-radius: 100%;
-    background-color: var(--primaryClrOrange);
-    opacity: 0.4;
-    padding: 5px;
-    color: white;
-    margin-right: -5px;
 }

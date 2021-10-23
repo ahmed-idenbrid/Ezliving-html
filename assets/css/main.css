@@ -5,6 +5,7 @@
  --primaryClrYellow:#F6BD00;
  --primaryClrGrey:#7F7C79;
  --primaryClrLightGrey:#C8C8C8;
+ --primaryGreen:#24C62A;
  --secondaryClrblue:#136FB5;
  --secondaryClrBlack:#000000;
  --secondaryClrLB:#232F3E;
@@ -434,11 +435,23 @@ color: var(--whiteColor);
 {
     background-color: white;
 }
+.productReviewHeader
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.productReviewHeaderIcons
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .productReviewHeader > div
 {
     display: flex;
 }
-.productReviewHeader > div > img
+.productReviewImg
 {
     width: 137px; 
     min-height: 123px;  
@@ -459,6 +472,11 @@ color: var(--whiteColor);
 {
     display: flex;
     align-items: center;
+}
+.productAttributeName
+{
+    font-size: 14px;
+    font-weight: bold;
 }
 .fa-star
 {
@@ -489,6 +507,11 @@ color: var(--whiteColor);
     display: flex;
     justify-content: space-between;
 }
+.productUserPhoto
+{
+    display:flex;
+    align-items: center;
+} 
 .productUserPhoto > img
 {
     width: 50px;
@@ -498,8 +521,11 @@ color: var(--whiteColor);
 {
     display: flex;
 }
-
-.productUserDescription,.productReviewComment > p
+.productUserDescriptionMbl,.productReviewGalleryMobile,.approvedLikes
+{
+    display: none;
+}
+.productUserDescription,.productUserDescriptionMbl,.productReviewComment > p
 {
     font-size: 14px;
     color: var(--primaryClrLightGrey);
@@ -618,4 +644,65 @@ color: var(--whiteColor);
     padding: 5px;
     color: white;
     margin-right: -5px;
+}
+/* Filter-page */
+.filterBodyTitle
+{
+    color: var(--primaryClrYellow);
+    font-size: 23px;
+    font-weight: bold;
+}
+.filterBodySubTitle
+{
+    color: var(--primaryClrGrey);
+    font-weight: bold;
+    font-size: 14px;
+}
+.filterBodyCheckBox
+{
+    background-color: var(--primaryClrOrange);
+    border-color: var(--primaryClrOrange);
+}
+.filterCateogoryContainer > li .form-group
+{
+    display: flex;
+    align-items: center;
+}
+.filterBodyLabel
+{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+.seeMore
+{
+    display: flex;
+    color: var(--primaryClrLightGrey);
+    font-size: 12px;
+    font-weight: bold;
+}
+.filterBudget
+{
+    height: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--primaryClrOrange);
+    opacity: 0.2;
+}
+.filterBudgetLimitContainer
+{
+    margin-top: -15px;
+    width: 100%;
+}
+.filterBudgetLimitContainer > ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+.filterBudgetLimit
+{
+    width: 20px;
+    height: 20px;
+    background-color: var(--primaryClrOrange);
+    border-radius: 100%;
 }
