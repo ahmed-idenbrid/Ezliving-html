@@ -26,7 +26,6 @@ body {
     background-color: #F6F6F6;
     font-family: 'Roboto', sans-serif;
     overflow-x: auto;
-    height: 100%;
 }
 
 .swiper {
@@ -70,14 +69,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* height: 90px; */
     width: 100%;
     box-shadow: 0px 0px 1px 0px #333333;
     background-color: #fff;
+    padding: 10px 10px;
 }
 
 .LogoCompany {
-    width: 116px;
-    height: 29px;
+    height: 40px;
+    width: 140px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% 100%;
@@ -115,7 +116,6 @@ body {
 } */
 .SocialIcons>li>a>i {
     color: #F39200;
-    font-size: 23px;
 }
 
 .BkMrkPrfLst {
@@ -151,38 +151,34 @@ body {
 }
 
 .SlidesHeading {
-    padding: 20px 0px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-.seeAllAnker {
-    font-size: 12px;
-    color: var(--primaryClrOrange);
-}
-
 .SlidesHeading>p {
     margin: 0px;
     padding: 0px;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 400;
-    color: #757574;
+    color: var(--primaryClrGrey);
+}
+
+.seeAllAnker.seeAllAnker {
+    font-size: 14px;
+    color: var(--primaryClrOrange);
 }
 
 .SlidesHeading>p>span {
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 26px;
     text-transform: uppercase;
     color: var(--primaryClrOrange);
 }
 
-
-
 .EzFeatured {
-    width: 252px !important;
-    height: 273px;
+    height: 200px;
 }
 
 .EzNewComer,
@@ -191,27 +187,24 @@ body {
     width: 200px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border-radius: 9px;
+    border-radius: 15px;
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding: 9px;
-
+    padding: 15px;
 }
 
 .EzNewComer>.detailInfo,
 .EzPartner>.detailInfo,
 .EzFeatured>.detailInfo {
     text-align: left;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 100%;
     padding: 10px;
     height: 60px;
-    box-shadow: 0px 10px 30px #00000008;
     background-color: rgba(255, 255, 255, 0.5);
 
 }
-
 
 .EzNewComer>.detailInfo>a,
 .EzPartner>.detailInfo>a,
@@ -220,34 +213,25 @@ body {
 }
 
 .EzPartner {
+    height: auto;
     align-items: center;
-    box-shadow: 0px 10px 30px #00000008;
-    width: 302px !important;
-    height: 90px;
+    box-shadow: 0px 0px 10px 0px var(--primaryClrGrey);
 }
 
 .EzPartner>.detailInfo {
-    color: #4A4A4A;
-}
-
-.EzPartner>.detailInfo h5 {
-    color: #4A4A4A;
-    font-size: 14px;
-    font-weight: 600;
+    color: #000000;
 }
 
 .EzPartner>img {
-    height: 73px;
-    width: 103px;
-    border-radius: 9px;
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
 }
 
 .EzNewComer {
     position: relative;
     flex-direction: column;
     padding: 0px;
-    width: 171px !important;
-    background: none;
 }
 
 .EzNewComer>.detailInfo {
@@ -255,30 +239,9 @@ body {
 }
 
 .EzNewComer>img {
-    height: 102px;
+    height: 170px;
     width: 100%;
     border-radius: 15px;
-}
-
-.EzNewComer>.detailInfo {
-    background: none !important;
-}
-
-.EzNewComer>.detailInfo h5 {
-    font-weight: bold;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.EzNewComer>.detailInfo h5>small {
-    color: var(--primaryClrOrange);
-}
-
-.EzNewComer>.detailInfo .dynamicValues>li {
-    color: #AAAAAA;
-    font-size: 12px;
 }
 
 .dynamicValues {
@@ -311,12 +274,10 @@ body {
 
 .searchFeild {
     width: 100%;
-    height: 43px;
+    height: 50px;
     border-radius: 15px;
     border: none;
-    padding: 0px 15px;
-    font-size: 12px;
-    box-shadow: 0px 10px 30px #00000008;
+    padding-left: 20px;
 }
 
 /* login */
@@ -528,20 +489,11 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-
 .MyfavoruiteItem>.detailInfo>h5,
 .MyfavoruiteItem>.detailInfo>h5,
 .MyfavoruiteItem>.detailInfo>h5 {
     color: var(--whiteColor);
     font-size: 19px;
-    margin: 0px;
-}
-
-.EzFeatured>.detailInfo h5,
-.EzFeatured>.detailInfo h5,
-.EzFeatured>.detailInfo h5 {
-    color: var(--whiteColor);
-    font-size: 14px;
     margin: 0px;
 }
 
@@ -563,48 +515,46 @@ body {
 .productReviewContainer {
     background-color: white;
 }
-
-.productReviewHeader,
-.commonHeader {
+.productReviewHeader,.commonHeader
+{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
-.productReviewHeaderIcons,
-.commonHeaderIcons {
+.productReviewHeaderIcons,.commonHeaderIcons
+{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
-.productReviewHeader,
-.commonHeader>div {
+.productReviewHeader,.commonHeader > div
+{
     display: flex;
 }
-
-.productReviewImg,
-.commonImg {
-    width: 137px;
-    min-height: 123px;
+.commonHeader > div
+{
+    align-items: flex-start;
+}
+.productReviewImg,.commonImg
+{
+    width: 137px; 
+    min-height: 123px;  
     border-radius: 17px;
 }
-
-.detailUserImg {
-    width: 222px;
-    min-height: 200px;
+.detailUserImg
+{
+    width: 222px; 
+    min-height: 200px; 
     border-radius: 41px;
 
 }
-
-.productReviewHeader,
-.commonHeader>div>div>h2 {
+.productReviewHeader,.commonHeader > div > div > h2
+{
     font-size: 28px;
     color: var(--primaryClrOrange);
 }
-
-.productReviewHeader,
-.commonHeader>div>div>h3 {
+.productReviewHeader,.commonHeader > div > div > h3
+{
     font-size: 19px;
     color: var(--primaryClrLightGrey);
     font-style: italic;
@@ -614,12 +564,29 @@ body {
     display: flex;
     align-items: center;
 }
-
+.commonReviewData
+{
+    display: flex;
+    align-items: center;
+}
 .productAttributeName {
     font-size: 14px;
     font-weight: bold;
 }
-
+.commonDiscoverTitle
+{
+    color: #4A4A4A;
+    font-size: 22px;
+    font-weight: bold;
+}
+.commonDiscover
+{
+    color: #C8C8C8;
+}
+.commonDiscover > p
+{
+    font-size: 16px;
+}
 .fa-star {
     color: var(--primaryClrYellow);
 }
@@ -639,7 +606,10 @@ body {
     border-radius: 100%;
     padding: 8px 12px;
 }
-
+.bg-white
+{
+    background-color: white;
+}
 .activityIcon>i {
     color: var(--primaryClrLightGrey);
 }
@@ -684,6 +654,12 @@ body {
     width: 96px;
     min-height: 96px;
     border-radius: 17px;
+}
+.commonGalleryImg
+{
+    width: 117px;
+    min-height: 117px;
+    border-radius: 10px;
 }
 
 .customRowMain {
@@ -902,7 +878,8 @@ body {
     font-size: 21px;
     font-weight: bold;
 }
- .userContactForm {
+
+.userContactForm {
     background-color: white;
 }
 
@@ -954,6 +931,35 @@ body {
 .font-16p {
     font-size: 16px;
 }
-.circle {
-        border-radius: 100%;
-    }
+.connectSection>h4
+{
+    font-weight: bold;
+}
+.socialLinks
+{
+    margin-top: 20px;
+}
+.socialLinks > ul >li>a
+{
+    padding: 10px 15px;
+    border-radius: 100%;
+    color: var(--primaryClrOrange);
+    background-color: #FFE9CE;
+    font-size: 24px;
+}
+.activeIcon
+{
+    color: var(--primaryClrOrange);
+}
+.singleReviewDescription
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.circle
+{
+    border-radius: 100%;
+}
