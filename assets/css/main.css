@@ -723,7 +723,7 @@ color: var(--whiteColor);
     background-color: var(--primaryClrOrange);
     border-radius: 100%;
 }
-.rating
+.ratingIcons
 {
     font-size: 10px;
 }
@@ -758,8 +758,8 @@ color: var(--whiteColor);
 {
     width: 100%;
     padding: 10px 15px;
-    border: 1px solid #9C9C9C;
-    color: #9C9C9C;
+    border: 1px solid #70707029;
+    color: #70707029;
     border-radius: 4px;
 }
 .contactInput::placeholder,.form-group > i
