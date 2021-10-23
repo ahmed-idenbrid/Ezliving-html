@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bizblanca</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstarp.min.css" />
+    <link rel="stylesheet" href="../assets/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d868f4cf6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="NavBarContainer container">
+        <a href="./index.html" class="v-on-d">
+            <figure class="LogoCompany"
+                style="background-image: url('../assets/img/logo/ez_living_logo_no background.png');"></figure>
+        </a>
+        <a href="./index.html" class="v-on-m">
+            <figure class="LogoCompany" style="background-image: url('../assets/img/logo/Favicon.png');">
+            </figure>
+        </a>
+        <div class="NavItems">
+            <ul class="SocialIcons">
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <RiWhatsappFill /> -->
+                        <i class="fab fa-whatsapp"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <IoLogoInstagram /> -->
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <GrFacebookOption /> -->
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <ImPhone /> -->
+                        <i class="fas fa-phone-alt"></i>
+                    </a></li>
+            </ul>
+            <ul class="BkMrkPrfLst h-on-m">
+                <li><a href="./myfavourite.html" rel="noopener noreferrer">
+                        <!-- <ImAddressBook /> -->
+                        <i class="fas fa-address-book"></i>
+                    </a></li>
+                <li><span></span></li>
+                <li><a href="../Auth/register.html" rel="noopener noreferrer">
+                        <!-- <CgProfile /> -->
+                        <i class="far fa-user"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- navbar end -->
+    <div class="container my-4">
+        <div class="userSection">
+            <div class="userProfileData w-100">
+                <div class="row no-gutters">
+                    <div class="col-4 col-lg-1 d-flex align-items-center">
+                        <img src="https://pbs.twimg.com/profile_images/1162267138842755075/zxLifsgg_400x400.jpg" class="userPhotoHeader" />
+                    </div>
+                    <div class="contactHeader ml-lg-1 d-flex flex-column justify-content-center">
+                        <h2>Tareen Interiors</h2>
+                        <div class="productReviewData font-16p">
+                            <i class="fas fa-star mr-1"></i>
+                            <h2>4.9<span class="subTitle">(500)</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="userContactForm p-4 my-3">
+                <div class="form-group">
+                    <label class="contactLabel" for="title">Title</label>
+                    <input class="contactInput" type="text" placeholder="Enter title"/>
+                </div>
+                <div class="form-group">
+                    <label class="contactLabel mt-3" for="reference">Purchase Reference (if available)</label>
+                    <input class="contactInput" type="text" placeholder="Enter Reference"/>
+                </div>
+                <div class="form-group mt-3">
+                    <label class="contactLabel mt-3" for="writeReview">Write a Review</label>
+                    <textarea name="description" id="contactDescription" cols="30" rows="10" placeholder="Would you like to write anything about this product?" class="contactInput"></textarea>
+                </div>
+                <div class="form-group mt-3">
+                    <label class="contactLabel mt-3">Add a photo</label>
+                    <label for="addPhoto" class="photoLabel py-5">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="mb-0">Click here to Upload</p>
+                    </label>
+                    <input id='addPhoto' class="contactInput my-2" type="file"/>
+                    <i>Add upto 3 images</i>
+                </div>
+                <div class="form-group">
+                    <label class="contactLabel mt-2 mb-0" for="reference">Rate your experience</label>
+                    <i class="d-block my-2">Choose applicable parameters</i>
+                    <ul class="p-0">
+                        <li>
+                            <div class="form-group mb-1">
+                                <input class="ContactUsCheckBox" type="checkbox" name="contactParameters" id="contactParameter1">
+                                <label class="ContactUsLabel ml-2" for="contactParameter1">Overall Quality</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group mb-1">
+                                <input class=" ContactUsCheckBox" type="checkbox" name="contactParameters" id="contactParameter2">
+                                <label class="ContactUsLabel ml-2" for="contactParameter2">Customer Service</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group mb-1">
+                                <input class=" ContactUsCheckBox" type="checkbox" name="contactParameters" id="contactParameter2">
+                                <label class="ContactUsLabel ml-2" for="contactParameter2">Value for Money</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group mb-1">
+                                <input class=" ContactUsCheckBox" type="checkbox" name="contactParameters" id="contactParameter2">
+                                <label class="ContactUsLabel ml-2" for="contactParameter2">Delivery</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="w-100 text-center my-3">
+                        <div class="btn filterBtn py-2">Submit Review</div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

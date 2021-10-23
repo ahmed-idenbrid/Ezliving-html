@@ -587,6 +587,13 @@ color: var(--whiteColor);
     border: 3px solid var(--primaryClrOrange);
     border-radius: 100%;
 }
+.userPhotoHeader
+{
+    width: 88px;
+    min-height: 88px;
+    border-radius: 100%;
+
+}
 .userProfileTitle,.userReviewTitle
 {
     display: flex;
@@ -679,6 +686,8 @@ padding:0px 10px;
     padding: 5px;
     color: white;
     margin-right: -5px;
+    position: absolute;
+    left: 100px;
 }
 /* Filter-page */
 .filterBodyTitle
@@ -765,3 +774,46 @@ padding:0px 10px;
     font-size: 21px;
     font-weight: bold;
 }
+.userContactForm
+{
+    background-color: white;
+}
+.contactLabel
+{
+    font-size: 20px;
+}
+.contactInput
+{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #9C9C9C;
+    color: #9C9C9C;
+    border-radius: 4px;
+}
+.contactInput::placeholder,.form-group > i
+{
+    color: #9C9C9C;
+}
+.ContactUsLabel
+{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.photoLabel
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9C9C9C;
+    border:1px dashed #70707029;
+    background-color: #FBFBFB;  
+}
+.photoLabel > i
+{
+    font-size: 26px;
+}
+#addPhoto{display: none;}
+.contactHeader>h2{font-size: 16px;}
+.font-16p{font-size: 16px;}
