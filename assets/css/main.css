@@ -730,6 +730,7 @@ body {
 
 .userReviewCardRating {
     display: flex;
+    align-items: center;
 }
 
 .ratingCount {
@@ -847,6 +848,7 @@ body {
     font-size: 21px;
     font-weight: bold;
 }
+<<<<<<< Updated upstream
 
 .userContactForm {
     background-color: white;
@@ -899,4 +901,9 @@ body {
 
 .font-16p {
     font-size: 16px;
+=======
+.circle
+{
+    border-radius:100%;
+>>>>>>> Stashed changes
 }
