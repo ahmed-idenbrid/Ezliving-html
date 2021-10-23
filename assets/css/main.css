@@ -531,6 +531,10 @@ body {
 {
     display: flex;
 }
+.commonHeader > div
+{
+    align-items: flex-start;
+}
 .productReviewImg,.commonImg
 {
     width: 137px; 
@@ -560,12 +564,29 @@ body {
     display: flex;
     align-items: center;
 }
-
+.commonReviewData
+{
+    display: flex;
+    align-items: center;
+}
 .productAttributeName {
     font-size: 14px;
     font-weight: bold;
 }
-
+.commonDiscoverTitle
+{
+    color: #4A4A4A;
+    font-size: 22px;
+    font-weight: bold;
+}
+.commonDiscover
+{
+    color: #C8C8C8;
+}
+.commonDiscover > p
+{
+    font-size: 16px;
+}
 .fa-star {
     color: var(--primaryClrYellow);
 }
@@ -585,7 +606,10 @@ body {
     border-radius: 100%;
     padding: 8px 12px;
 }
-
+.bg-white
+{
+    background-color: white;
+}
 .activityIcon>i {
     color: var(--primaryClrLightGrey);
 }
@@ -630,6 +654,12 @@ body {
     width: 96px;
     min-height: 96px;
     border-radius: 17px;
+}
+.commonGalleryImg
+{
+    width: 117px;
+    min-height: 117px;
+    border-radius: 10px;
 }
 
 .customRowMain {
@@ -848,7 +878,6 @@ body {
     font-size: 21px;
     font-weight: bold;
 }
-<<<<<<< Updated upstream
 
 .userContactForm {
     background-color: white;
@@ -901,9 +930,34 @@ body {
 
 .font-16p {
     font-size: 16px;
-=======
-.circle
+}
+.connectSection>h4
 {
-    border-radius:100%;
->>>>>>> Stashed changes
+    font-weight: bold;
+}
+.socialLinks
+{
+    margin-top: 20px;
+}
+.socialLinks > ul >li>a
+{
+    padding: 10px 15px;
+    border-radius: 100%;
+    color: var(--primaryClrOrange);
+    background-color: #FFE9CE;
+    font-size: 24px;
+}
+.activeIcon
+{
+    color: var(--primaryClrOrange);
+}
+.singleReviewDescription
+{
+    font-weight: lighter;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
