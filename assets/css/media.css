@@ -30,6 +30,9 @@
         margin-left: 0px;
        /*  margin-top: 20px; */
     }
+    .tabsComponents>li>i {
+        font-size: 22px;
+    }
     .MyfavoruiteItem>.detailInfo>h5, .MyfavoruiteItem>.detailInfo>h5, .MyfavoruiteItem>.detailInfo>h5{
         color: var(--whiteColor);
         font-size: 13px;
@@ -47,11 +50,23 @@
         font-size: 13px;
         font-weight: bold;
     }
+    .NavBarContainer{
+        padding: 0px 10px;
+        background: none;
+        box-shadow: none;
+    }
     .headingFavourite{
         font-size: 18px;
         text-align: center;
         width: 100%;
         padding: 20px 0px;
+    }
+    .mobileLogo{
+        height: 38px !important;
+        width: 30px !important;
+    }
+    .seeAllAnker {
+        font-size: 12px;
     }
     .v-on-d{    
         display: none;

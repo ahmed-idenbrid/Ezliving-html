@@ -26,6 +26,7 @@ body {
     background-color: #F6F6F6;
     font-family: 'Roboto', sans-serif;
     overflow-x: auto;
+    height: 100%;
 }
 
 .swiper {
@@ -151,34 +152,36 @@ body {
 }
 
 .SlidesHeading {
-    padding: 10px 0px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.SlidesHeading>p {
-    margin: 0px;
-    padding: 0px;
-    font-size: 23px;
-    font-weight: 400;
-    color: var(--primaryClrGrey);
-}
 
-.seeAllAnker.seeAllAnker {
-    font-size: 14px;
+.seeAllAnker {
+    font-size: 12px;
     color: var(--primaryClrOrange);
 }
 
+.SlidesHeading>p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #757574;
+}
+
 .SlidesHeading>p>span {
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 22px;
     text-transform: uppercase;
     color: var(--primaryClrOrange);
 }
 
 .EzFeatured {
-    height: 200px;
+    width: 200px !important;
+    height: 184px
 }
 
 .EzNewComer,
@@ -187,21 +190,23 @@ body {
     width: 200px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 9px;
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding: 15px;
+    padding: 9px;
+
 }
 
 .EzNewComer>.detailInfo,
 .EzPartner>.detailInfo,
 .EzFeatured>.detailInfo {
     text-align: left;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
     padding: 10px;
     height: 60px;
+    box-shadow: 0px 10px 30px #00000008;
     background-color: rgba(255, 255, 255, 0.5);
 
 }
@@ -213,25 +218,34 @@ body {
 }
 
 .EzPartner {
-    height: auto;
     align-items: center;
-    box-shadow: 0px 0px 10px 0px var(--primaryClrGrey);
+    box-shadow: 0px 10px 30px #00000008;
+    width: 302px !important;
+    height: 90px;
 }
 
 .EzPartner>.detailInfo {
-    color: #000000;
+    color: #4A4A4A;
+}
+
+.EzPartner>.detailInfo h5 {
+    color: #4A4A4A;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .EzPartner>img {
-    height: 120px;
-    width: 120px;
-    border-radius: 15px;
+    height: 73px;
+    width: 103px;
+    border-radius: 9px;
 }
 
 .EzNewComer {
     position: relative;
     flex-direction: column;
     padding: 0px;
+    width: 171px !important;
+    background: none;
 }
 
 .EzNewComer>.detailInfo {
@@ -239,11 +253,27 @@ body {
 }
 
 .EzNewComer>img {
-    height: 170px;
+    height: 102px;
     width: 100%;
     border-radius: 15px;
 }
-
+.EzNewComer>.detailInfo{
+    background: none !important;
+}
+.EzNewComer>.detailInfo h5{
+   font-weight: bold;
+   font-size: 14px;
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+}
+.EzNewComer>.detailInfo h5>small{
+   color: var(--primaryClrOrange);
+}
+.EzNewComer>.detailInfo .dynamicValues > li{
+   color: #AAAAAA;
+   font-size: 12px;
+}
 .dynamicValues {
     padding: 0px;
     margin: 0px;
@@ -274,10 +304,12 @@ body {
 
 .searchFeild {
     width: 100%;
-    height: 50px;
+    height: 43px;
     border-radius: 15px;
     border: none;
-    padding-left: 20px;
+    padding: 0px 15px;
+    font-size: 12px;
+    box-shadow: 0px 10px 30px #00000008;
 }
 
 /* login */
@@ -489,11 +521,20 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+
 .MyfavoruiteItem>.detailInfo>h5,
 .MyfavoruiteItem>.detailInfo>h5,
 .MyfavoruiteItem>.detailInfo>h5 {
     color: var(--whiteColor);
     font-size: 19px;
+    margin: 0px;
+}
+
+.EzFeatured>.detailInfo h5,
+.EzFeatured>.detailInfo h5,
+.EzFeatured>.detailInfo h5 {
+    color: var(--whiteColor);
+    font-size: 14px;
     margin: 0px;
 }
 
@@ -515,42 +556,48 @@ body {
 .productReviewContainer {
     background-color: white;
 }
-.productReviewHeader,.commonHeader
-{
+
+.productReviewHeader,
+.commonHeader {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.productReviewHeaderIcons,.commonHeaderIcons
-{
+
+.productReviewHeaderIcons,
+.commonHeaderIcons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.productReviewHeader,.commonHeader > div
-{
+
+.productReviewHeader,
+.commonHeader>div {
     display: flex;
 }
-.productReviewImg,.commonImg
-{
-    width: 137px; 
-    min-height: 123px;  
+
+.productReviewImg,
+.commonImg {
+    width: 137px;
+    min-height: 123px;
     border-radius: 17px;
 }
-.detailUserImg
-{
-    width: 222px; 
-    min-height: 200px; 
+
+.detailUserImg {
+    width: 222px;
+    min-height: 200px;
     border-radius: 41px;
 
 }
-.productReviewHeader,.commonHeader > div > div > h2
-{
+
+.productReviewHeader,
+.commonHeader>div>div>h2 {
     font-size: 28px;
     color: var(--primaryClrOrange);
 }
-.productReviewHeader,.commonHeader > div > div > h3
-{
+
+.productReviewHeader,
+.commonHeader>div>div>h3 {
     font-size: 19px;
     color: var(--primaryClrLightGrey);
     font-style: italic;
@@ -848,9 +895,8 @@ body {
     font-size: 21px;
     font-weight: bold;
 }
-<<<<<<< Updated upstream
 
-.userContactForm {
+<<<<<<< Updated upstream .userContactForm {
     background-color: white;
 }
 
@@ -901,9 +947,8 @@ body {
 
 .font-16p {
     font-size: 16px;
-=======
-.circle
-{
-    border-radius:100%;
->>>>>>> Stashed changes
-}
+
+    =======.circle {
+        border-radius: 100%;
+        >>>>>>>Stashed changes
+    }
