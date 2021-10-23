@@ -133,8 +133,14 @@
     {
         display: block;
     }
+<<<<<<< Updated upstream
     .filterBtn {
         font-size: 16px;
+=======
+    .filterBtn
+    {
+        width: 100%;
+>>>>>>> Stashed changes
     }
 }
 
