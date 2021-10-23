@@ -582,7 +582,19 @@ body {
 .commonHeader>div {
     display: flex;
 }
+.commonDiscoverTitle {
+    color: #4A4A4A;
+    font-size: 22px;
+    font-weight: bold;
+}
 
+.commonDiscover {
+    color: #C8C8C8;
+}
+
+.commonDiscover>p {
+    font-size: 16px;
+}
 .productReviewImg,
 .commonImg {
     width: 137px;
@@ -595,6 +607,10 @@ body {
     min-height: 200px;
     border-radius: 41px;
 
+}
+.commonReviewData {
+    display: flex;
+    align-items: center;
 }
 
 .productReviewHeader,
@@ -648,7 +664,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+.commonGalleryImg {
+    width: 117px;
+    min-height: 117px;
+    border-radius: 10px;
+}
 .productUserPhoto {
     display: flex;
     align-items: center;
