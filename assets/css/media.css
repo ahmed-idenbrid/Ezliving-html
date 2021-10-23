@@ -1,4 +1,35 @@
+
+@media screen and (min-width:769px) {
+    .v-on-d{    
+        display: block;
+    }
+    .v-on-m{    
+        display: none;
+    }
+    .tabsComponents{
+        justify-content: space-between;
+    }
+    .LogoCompanyD{
+        display: block;
+    }
+    .LogoCompanyM{
+        display: none;
+    }
+}
 @media screen and (max-width:769px) {
+    .MyfavoruiteItem{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 15px;
+        width: 163px;
+        height: 144px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
     .v-on-d{    
         display: none;
     }
@@ -14,6 +45,7 @@
     }
     .SocialIcons {
         width: 160px;
+        margin: 0px;
     }
     .SocialIcons>li {
         font-size: 26px;
@@ -58,20 +90,8 @@
     {
         display: block;
     }
-
 }
 
-@media screen and (min-width:769px) {
-    .v-on-d{    
-        display: block;
-    }
-    .v-on-m{    
-        display: none;
-    }
-    .tabsComponents{
-        justify-content: space-between;
-    }
-}
 @media screen and (max-width:993px) {
     
 }
