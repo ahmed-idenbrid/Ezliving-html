@@ -458,34 +458,41 @@ color: var(--whiteColor);
 {
     background-color: white;
 }
-.productReviewHeader
+.productReviewHeader,.commonHeader
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.productReviewHeaderIcons
+.productReviewHeaderIcons,.commonHeaderIcons
 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.productReviewHeader > div
+.productReviewHeader,.commonHeader > div
 {
     display: flex;
 }
-.productReviewImg
+.productReviewImg,.commonImg
 {
     width: 137px; 
     min-height: 123px;  
     border-radius: 17px;
 }
-.productReviewHeader > div > div > h2
+.detailUserImg
+{
+    width: 222px; 
+    min-height: 200px; 
+    border-radius: 41px;
+
+}
+.productReviewHeader,.commonHeader > div > div > h2
 {
     font-size: 28px;
     color: var(--primaryClrOrange);
 }
-.productReviewHeader > div > div > h3
+.productReviewHeader,.commonHeader > div > div > h3
 {
     font-size: 19px;
     color: var(--primaryClrLightGrey);
