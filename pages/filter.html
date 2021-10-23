@@ -71,10 +71,12 @@
                     </div>
                 </li>
             </ul>
-            <div class="seeMore">
-                <i>Down</i>
-                <p class="ml-2">See more</p>
+            <div class="seeMore mb-2">
+                <i class="fas fa-arrow-down"></i>
+                <p class="ml-2 mb-0">See more</p>
             </div>
+            <div class="filterBudgetCoantainer mt-4">
+                <div class="filterBodySubTitle my-2">Budget</div>
             <div class="filterBudget">
             </div>
             <div class="filterBudgetLimitContainer">
@@ -96,8 +98,10 @@
                     </li>
                 </ul>
             </div>
+        </div>
+            
             <div class="featured">
-                <div class="filterBodySubTitle">Featured</div>
+                <div class="filterBodySubTitle my-2">Featured</div>
                 <ul class="p-0">
                     <li>
                         <div class="form-group mb-1">
@@ -114,12 +118,12 @@
                 </ul>
             </div>
             <div class="sortByRating">
-                <div class="filterBodySubTitle">By rating</div>
+                <div class="filterBodySubTitle my-2">By rating</div>
                 <ul class="p-0">
                     <li>
-                        <div class="form-group mb-1">
+                        <div class="form-group d-flex align-items-center mb-1">
                             <input class="filterBodyCheckBox" type="radio" name="featured">
-                            <div class="rating">
+                            <div class="rating ml-2">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star ml-1"></i>
                                 <i class="fas fa-star ml-1"></i>
@@ -129,12 +133,74 @@
                         </div>
                     </li>
                     <li>
-                        <div class="form-group">
+                        <div class="form-group d-flex align-items-center mb-1">
                             <input class="filterBodyCheckBox" type="radio" name="featured">
-                            <label class="filterBodyLabel ml-2" for="featured">No</label>
+                            <div class="rating ml-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star ml-1"></i>
+                                <i class="fas fa-star ml-1"></i>
+                                <i class="fas fa-star ml-1"></i>
+                                <i class="fas fa-star fa-star-grey ml-1"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="featured">
+                            <div class="rating ml-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star ml-1"></i>
+                                <i class="fas fa-star ml-1"></i>
+                                <i class="fas fa-star fa-star-grey ml-1"></i>
+                                <i class="fas fa-star fa-star-grey ml-1"></i>
+                            </div>
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="sortByPricing">
+                <div class="filterBodySubTitleBig my-2">Sort By</div>
+                <ul class="p-0">
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="sortPricing" id="sortPricing1">
+                            <label class="filterBodyLabel ml-2" for="sortPricing1">Price (high to low)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="sortPricing" id="sortPricing2">
+                            <label class="filterBodyLabel ml-2" for="sortPricing2">Price (low to high)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="sortPricing" id="sortPricing3">
+                            <label class="filterBodyLabel ml-2" for="sortPricing3">Rating (high to low)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="sortPricing" id="sortPricing4">
+                            <label class="filterBodyLabel ml-2" for="sortPricing4">Rating (low to high)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="sortPricing" id="sortPricing5">
+                            <label class="filterBodyLabel ml-2" for="sortPricing5">Fastest delivery</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group d-flex align-items-center mb-1">
+                            <input class="filterBodyCheckBox" type="radio" name="sortPricing" id="sortPricing6">
+                            <label class="filterBodyLabel ml-2" for="sortPricing6">Recommended</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100 text-center my-3">
+                <div class="btn filterBtn py-2">Apply Filter</div>
             </div>
         </div>
     </div>

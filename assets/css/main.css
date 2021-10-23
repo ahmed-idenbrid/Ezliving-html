@@ -684,6 +684,7 @@ color: var(--whiteColor);
 .seeMore
 {
     display: flex;
+    align-items: center;
     color: var(--primaryClrLightGrey);
     font-size: 12px;
     font-weight: bold;
@@ -712,4 +713,27 @@ color: var(--whiteColor);
     height: 20px;
     background-color: var(--primaryClrOrange);
     border-radius: 100%;
+}
+.rating
+{
+    font-size: 10px;
+}
+.fa-star-grey
+{
+    color: #C9C8C6;
+}
+.filterBodySubTitleBig
+{
+    font-size: 23px;
+    color: var(--primaryClrOrange);
+    font-weight: bold;
+}
+.filterBtn
+{
+    background-color: var(--primaryClrOrange);
+    color: white;
+    border-radius: 30px;
+    padding-inline: 70px;
+    font-size: 21px;
+    font-weight: bold;
 }
