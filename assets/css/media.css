@@ -47,6 +47,12 @@
         font-size: 13px;
         font-weight: bold;
     }
+    .headingFavourite{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0px;
+    }
     .v-on-d{    
         display: none;
     }
