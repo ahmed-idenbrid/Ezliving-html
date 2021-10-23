@@ -55,6 +55,10 @@
         background: none;
         box-shadow: none;
     }
+    .EzFeatured {
+        width: 200px !important;
+        height: 184px
+    }
     .headingFavourite{
         font-size: 18px;
         text-align: center;
