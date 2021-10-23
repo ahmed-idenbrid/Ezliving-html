@@ -15,7 +15,7 @@ var swiper = new Swiper(".EzFeaturedSwiper", {
       spaceBetween: 10,
     },
     1366: {
-      slidesPerView:4,
+      slidesPerView:2,
       spaceBetween: 20,
     },
   },
