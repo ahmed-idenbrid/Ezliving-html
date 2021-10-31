@@ -166,6 +166,14 @@
         font-size: 12px;
         min-width: 140px;
     }
+    .p-sm-off
+    {
+        padding: 0 !important;
+    }
+    .p-sm-on
+    {
+        padding-inline:15px !important;
+    }
     
 }
 

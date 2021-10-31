@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bizblanca</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstarp.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d868f4cf6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="NavBarContainer container">
+        <a href="./index.html" class="v-on-d">
+            <figure class="LogoCompany"
+                style="background-image: url('../assets/img/logo/ez_living_logo_no background.png');"></figure>
+        </a>
+        <a href="./index.html" class="v-on-m">
+            <figure class="LogoCompany mobileLogo" style="background-image: url('../assets/img/logo/Favicon.png');">
+            </figure>
+        </a>
+        <div class="NavItems">
+            <ul class="SocialIcons">
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <RiWhatsappFill /> -->
+                        <i class="fab fa-whatsapp"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <IoLogoInstagram /> -->
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <GrFacebookOption /> -->
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                <li><a href="" rel="noopener noreferrer">
+                        <!-- <ImPhone /> -->
+                        <i class="fas fa-phone-alt"></i>
+                    </a></li>
+            </ul>
+            <ul class="BkMrkPrfLst h-on-m">
+                <li><a href="./myfavourite.html" rel="noopener noreferrer">
+                        <!-- <ImAddressBook /> -->
+                        <i class="fas fa-address-book"></i>
+                    </a></li>
+                <li><span></span></li>
+                <li><a href="../Auth/register.html" rel="noopener noreferrer">
+                        <!-- <CgProfile /> -->
+                        <i class="far fa-user"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- navbar end -->
+    <div class="container p-sm-off">
+        <div class="commonNavigationSection p-sm-on">
+            <div class="commonNavigationTitle">You're logged in as admin</div>
+            <div class="commonNavigation">
+                <a class="previousNavigation" href="#">Home</a>
+                <i class="fas fa-chevron-left mx-2"></i>
+                <a class="activeNavigation" href="#">Add Category</a>
+                
+            </div>
+        </div>
+        <div class="addPartnerContainer container">
+            <div class="commonDetailTitle my-2">
+                Add New Category
+            </div>
+                <div class="form-group">
+                    <label class="commonDetailLabel">Name</label>
+                    <input class="commonDetailInput my-2" type="text" placeholder="Enter Name"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonDetailLabel">Add Icon</label>
+                    <label for="addPhoto" class="photoLabel py-5">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="mb-0">Click here to Upload</p>
+                    </label>
+                    <input id='addPhoto' class="contactInput my-2" type="file"/>
+                    
+
+                </div>
+                <div id='tagInputContainer' class="form-group">
+
+                    <label  class="commonDetailLabel">Add Tags</label>
+                    
+                    <div class="d-flex align-items-center">
+                        
+                        <input class="commonDetailInput my-2" type="text"/>
+                        <i onclick="addTag()" class="fas fa-plus ml-2"></i>
+                    </div>
+
+                </div>
+                <div class="w-100 text-center my-3">
+                    <div class="btn filterBtn py-2">Add Category</div>
+                </div>
+                
+                
+
+                
+        </div>
+    <script>
+        function addTag()
+        {
+            var tagContainer = document.getElementById('tagInputContainer')
+            var tagHolder = document.createElement('div')
+            var tagInput  = document.createElement('input')
+            var tagCloseIcon  = document.createElement('i')
+            tagHolder.className = 'd-flex align-items-center'
+            tagCloseIcon.className = 'fas fa-times ml-2'
+            tagCloseIcon.onclick = removetag;
+            tagInput.className = "commonDetailInput my-2"
+            tagContainer.appendChild(tagHolder).appendChild(tagInput)
+            tagContainer.appendChild(tagHolder).appendChild(tagCloseIcon)
+        }
+        function removetag(e)
+        {
+          let targetvalue = e.target;
+          $(targetvalue).parent().remove(); 
+        }
+    </script>
+        <script src="../assets/js/jquery/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
