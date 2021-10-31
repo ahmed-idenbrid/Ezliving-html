@@ -174,7 +174,15 @@
     {
         padding-inline:15px !important;
     }
-    
+    .selectedDay
+{
+font-size: 14px;
+}
+    .selectedTime
+    {
+        font-size: 12px;
+        color:grey;
+    }
 }
 
 

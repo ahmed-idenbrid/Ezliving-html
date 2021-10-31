@@ -1115,12 +1115,20 @@ body {
     background-color: white;
 
 }
-.fa-plus,.fa-times
+.fa-plus
 {
     font-size: 26px;
     padding: 10px;
     background-color: rgba(255, 182, 47, 0.671);
     color: var(--primaryClrOrange);
+    border-radius: 4px;
+}
+.fa-minus
+{
+    font-size: 26px;
+    padding: 10px;
+    background-color: #E4E4E4;
+    color: var(--primaryClrGrey);
     border-radius: 4px;
 }
 .businessHourBox
@@ -1145,4 +1153,28 @@ body {
     padding: 15px 20px;
     color: #C3C3C3;
     border: 1px solid #C3C3C3;
+}
+.selectedTime
+{
+    display: flex;
+    align-items: center;
+}
+.selectedDay
+{
+    font-size: 23px;
+}
+.fa-times
+{
+    padding:3px 5px;
+    color: red;
+    border-radius: 100%;
+    background-color: #FFD8D8;
+}
+.imgCloser
+{
+    margin-left: -15px;
+}
+.requiredInput
+{
+    color: red;
 }
