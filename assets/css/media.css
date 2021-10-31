@@ -157,6 +157,16 @@
     {
         margin-top: 20px;
     }
+    .customSelect
+    {
+        padding: 5px 10px;
+    }
+    .businessHourBox
+    {
+        font-size: 12px;
+        min-width: 140px;
+    }
+    
 }
 
 

@@ -1126,7 +1126,7 @@ body {
 .businessHourBox
 {
     padding: 10px 50px;
-    min-width: max-content;
+    min-width: 165px;
     background-color: #E4E4E4;
     color: #C3C3C3;
     font-size: 18px;
