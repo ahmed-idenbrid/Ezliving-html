@@ -1115,11 +1115,34 @@ body {
     background-color: white;
 
 }
-.fa-plus
+.fa-plus,.fa-times
 {
     font-size: 26px;
     padding: 10px;
     background-color: rgba(255, 182, 47, 0.671);
     color: var(--primaryClrOrange);
     border-radius: 4px;
+}
+.businessHourBox
+{
+    padding: 10px 50px;
+    min-width: max-content;
+    background-color: #E4E4E4;
+    color: #C3C3C3;
+    font-size: 18px;
+}
+.commonSmallLabel
+{
+    font-size: 15px;
+    color: #7B7B7B;
+}
+.businessDisabledInput
+{
+    display: none;
+}
+.customSelect
+{
+    padding: 15px 20px;
+    color: #C3C3C3;
+    border: 1px solid #C3C3C3;
 }

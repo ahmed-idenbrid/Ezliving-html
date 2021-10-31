@@ -83,16 +83,16 @@
                     <small><i>Dimensions should be 1920x320</i></small> 
                 </div>
                 <div class="form-group">
-                    <div class="commonDetailLabel">Title</div>
+                    <label class="commonDetailLabel">Title</label>
                     <input class="commonDetailInput my-2" type="text" placeholder="Enter Title"/>
                 </div>
                 <div class="form-group">
                     <div class="commonDetailLabel">Description</div>
                     <textarea class="commonDetailInput my-2" cols="30" rows="5" placeholder="Write Description Here..."></textarea>
                 </div>
-                <div class="form-group">
+                <div id='servicesInputContainer' class="form-group">
 
-                    <div id='servicesInputContainer' class="commonDetailLabel">Services</div>
+                    <label  class="commonDetailLabel">Services</label>
                     
                     <div class="d-flex align-items-center">
                         
@@ -101,21 +101,138 @@
                     </div>
 
                 </div>
+                <div class="form-group">
+                    <label class="commonDetailLabel">Add Photos</label>
+                    <label for="addPhoto" class="photoLabel py-5">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="mb-0">Click here to Upload</p>
+                    </label>
+                    <input id='addPhoto' class="contactInput my-2" type="file"/>
+                    <i>Add upto 6 Images</i>
+
+                </div>
+                <label class="commonDetailLabel">Add Partner Contact Info</label>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Website</label>
+                    <input class="commonDetailInput my-2" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Instagram</label>
+                    <input class="commonDetailInput my-2" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Facebook</label>
+                    <input class="commonDetailInput my-2" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Call</label>
+                    <input class="commonDetailInput my-2" type="text" placeholder="Mobile Number"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Email</label>
+                    <input class="commonDetailInput my-2" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Whatsapp</label>
+                    <input class="commonDetailInput my-2" type="text" placeholder="Mobile Number"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonDetailLabel">Add location</label>
+                    <input class="commonDetailInput my-2" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="commonDetailLabel">Select Business Hours</label>
+                    <div class="w-100">
+                    <div class="d-flex align-items-center">
+                        <input id='monday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                        <label for="monday" class="businessHourBox">Mon</label>
+                        <div class="form-group ml-5">
+                            <label class="commonSmallLabel">Select Time</label>
+                            <div>
+                                <select class="customSelect">
+                                    <option value="">Opening Time</option>
+                                </select>
+                                <select class="customSelect ml-1">
+                                    <option value="">Closing Time</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <input id='tuesday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                    <label for="tuesday" class="businessHourBox">Tue</label>
+                    <input id='wednesday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                    <label for="wednesday" class="businessHourBox">Wed</label>
+                    <input id='thursday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                    <label for="thursday" class="businessHourBox">Thu</label>
+                    <input id='friday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                    <label for="friday" class="businessHourBox">Fri</label>
+                    <input id='saturday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                    <label for="saturday" class="businessHourBox">Sat</label>
+                    <input id='sunday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
+                    <label for="sunday" class="businessHourBox">Sun</label>
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="form-group">
+                    <label class="commonSmallLabel">Select Time</label>
+                    <div>
+                        <select class="customSelect">
+                            <option value="">Opening Time</option>
+                        </select>
+                        <select class="customSelect ml-1">
+                            <option value="">Closing Time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="commonDetailLabel">Choose Budget</label>
+                    <ul class="p-0">
+                        <li class="d-flex align-items-center">
+                            <input id="firstPrice" type="radio">
+                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$</label>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <input id="firstPrice" type="radio">
+                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$$</label>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <input id="firstPrice" type="radio">
+                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$$$</label>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <input id="firstPrice" type="radio">
+                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$$$</label>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </div>
+                
+
+                
         </div>
     </div>
     <script>
         function addService()
         {
             var servicesContainer = document.getElementById('servicesInputContainer')
+            var servicesHolder = document.createElement('div')
             var serviceInput  = document.createElement('input')
-            var serviceCloseIcon  = document.createElement('input')
-            
+            var serviceCloseIcon  = document.createElement('i')
+            servicesHolder.className = 'd-flex align-items-center'
+            serviceCloseIcon.className = 'fas fa-times ml-2'
+            serviceCloseIcon.onclick = removeService;
             serviceInput.className = "commonDetailInput my-2"
-            servicesContainer.appendChild(serviceInput)
+            servicesContainer.appendChild(servicesHolder).appendChild(serviceInput)
+            servicesContainer.appendChild(servicesHolder).appendChild(serviceCloseIcon)
         }
-        function removeService()
+        function removeService(e)
         {
-            var document.getElementById('')
+          let targetvalue = e.target;
+          $(targetvalue).parent().remove(); 
         }
     </script>
         <script src="../assets/js/jquery/jquery.min.js"></script>
