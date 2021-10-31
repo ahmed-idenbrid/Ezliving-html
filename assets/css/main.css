@@ -688,7 +688,10 @@ body {
 .approvedLikes {
     display: none;
 }
-
+.productReviewGalleryMobile
+{
+    overflow: hidden;
+}
 .productUserDescription,
 .productUserDescriptionMbl,
 .productReviewComment>p {
@@ -1041,4 +1044,82 @@ body {
 {
     color: var(--primaryClrOrange);
     font-size: 14px;
+}
+/* ADD PARTNER PAGE */
+.commonNavigationTitle
+{
+    font-weight: bold;
+    font-size: 22px;
+    color: #4A4A4A;
+}
+.previousNavigation
+{
+    font-size: 18px;
+    color: #ACACAC;
+}
+.activeNavigation
+{
+    color: #4A4A4A;
+}
+.commonNavigation
+{
+    margin-block: 10px;
+}
+.commonNavigationSection
+{
+    margin-top: 10px;
+}
+#customStyledInput
+{
+    display: none;
+}
+.customStyledInput
+{
+    width: 100%;
+    background-color: #dadada;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 4px;
+}
+.fa-camera
+{
+    color: #A4A4A4;
+    font-size: 26px;
+}
+.commonDetailTitle
+{
+    font-weight: bold;
+    color: var(--primaryClrOrange);
+    font-size: 23px;
+}
+.commonDetailLabel
+{
+    color: #4A4A4A;
+    font-size: 21px;
+}
+.commonDetailInput
+{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #70707029;
+    border-radius: 4px;
+}
+.commonDetailInput::placeholder
+{
+    color: #9C9C9C;
+}
+.addPartnerContainer
+{
+    padding: 1.5rem;
+    background-color: white;
+
+}
+.fa-plus
+{
+    font-size: 26px;
+    padding: 10px;
+    background-color: rgba(255, 182, 47, 0.671);
+    color: var(--primaryClrOrange);
+    border-radius: 4px;
 }

@@ -136,7 +136,29 @@
     .filterBtn {
         font-size: 16px;
     }
+    .socialLinks > ul >li
+    {
+        margin-right: 0.5rem !important;
+    }
+    .socialLinks > ul >li>a
+    {
+        font-size: 16px;
+        padding: 6px 9px;
+    }
+    .reviewTitle,.singleReviewData
+    {
+        margin-left: 0 !important;
+    }
+    .productReviewBody
+    {
+        padding: 5px;
+    }
+    .commonDetails
+    {
+        margin-top: 20px;
+    }
 }
+
 
 @media screen and (max-width:320px) {
     .MyfavoruiteItem{
