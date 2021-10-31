@@ -1178,3 +1178,51 @@ body {
 {
     color: red;
 }
+/* Admin panel */
+.adminPanelOverview
+{
+    background-color: darkred;
+    color: white;
+    border-radius: 17px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.panelOptionBox
+{
+    border-radius: 17px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.panelItems
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.panelOptionBox > i
+{
+    background-color: var(--primaryClrOrange);
+    border-radius: 100%;
+    padding: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+.panelItemNumber
+{
+    font-size: xxx-large;
+}
+.panelTitle
+{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
