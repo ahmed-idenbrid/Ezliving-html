@@ -1012,3 +1012,33 @@ body {
 .css{
     font-variant: unset;
 }
+/* /Detail-3/ */
+.singleReviewData
+{
+    display: flex;
+    justify-content: space-between;
+}
+.reviewSubData
+{
+    display: flex;
+}
+.reviewTitle
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.reviewNumTitle
+{
+    font-size: 32px;
+}
+.reviewRemark
+{
+    color: #24C62A;
+    font-weight: bold;
+}
+.singleReviewData > h6 > a
+{
+    color: var(--primaryClrOrange);
+    font-size: 14px;
+}
