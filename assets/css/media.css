@@ -15,8 +15,19 @@
     .LogoCompanyM{
         display: none;
     }
+    
+    .selectDateWrap>.col-4{
+        padding: 0px 10px !important;
+    }
+    .selectDateWrap>.col-3{
+        padding: 0px 10px !important;
+    }
 }
 @media screen and (max-width:769px) {
+    .selectDateWrap{
+        justify-content: space-between;
+    }
+    
     .MyfavoruiteItem{
         background-size: 100% 100%;
         background-repeat: no-repeat;

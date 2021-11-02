@@ -69,190 +69,193 @@
                 <a class="previousNavigation" href="#">Home</a>
                 <i class="fas fa-chevron-left mx-2"></i>
                 <a class="activeNavigation" href="#">Add a partner</a>
-                
+
             </div>
         </div>
-        <div class="addPartnerContainer container p-0">
+        <div class="addPartnerContainer container p-md-3 p-0">
             <div class="commonDetailTitle">
                 Add Partner Details
             </div>
-                <div class="form-group my-2">
-                    <label class="commonDetailLabel" for="">Upload Profile Image</label>
-                    <label class="customStyledInput" for="customStyledInput"><i class="fas fa-camera"></i></label>
-                    <input id="customStyledInput" type="file"/>
-                    <small><i>Dimensions should be 1920x320</i></small> 
-                </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Title</label>
-                    <input class="commonDetailInput my-2" type="text" value="Tareen Interior" placeholder="Enter Title"/>
-                </div>
-                <div class="form-group">
-                    <div class="commonDetailLabel">Description</div>
-                    <textarea class="commonDetailInput my-2" cols="30" rows="5" placeholder="Write Description Here..."></textarea>
-                </div>
-                <div id='servicesInputContainer' class="form-group">
+            <div class="form-group my-2">
+                <label class="commonDetailLabel" for="">Upload Profile Image</label>
+                <label class="customStyledInput" for="customStyledInput"><i class="fas fa-camera"></i></label>
+                <input id="customStyledInput" type="file" />
+                <small><i>Dimensions should be 1920x320</i></small>
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Title</label>
+                <input class="commonDetailInput my-2" type="text" value="Tareen Interior" placeholder="Enter Title" />
+            </div>
+            <div class="form-group">
+                <div class="commonDetailLabel">Description</div>
+                <textarea class="commonDetailInput my-2" cols="30" rows="5"
+                    placeholder="Write Description Here..."></textarea>
+            </div>
+            <div id='servicesInputContainer' class="form-group">
 
-                    <label  class="commonDetailLabel">Services</label>
-                    
-                    <div class="d-flex align-items-center">
-                        <input class="commonDetailInput my-2"  value="Room Interior" type="text"/>
-                        <i onclick="addService()" class="fas fa-plus ml-2"></i>
+                <label class="commonDetailLabel">Services</label>
+
+                <div class="d-flex align-items-center">
+                    <input class="commonDetailInput my-2" value="Room Interior" type="text" />
+                    <i onclick="addService()" class="fas fa-plus ml-2"></i>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input class="commonDetailInput my-2" value="Interior Design" type="text" />
+                    <i onclick="removeService(event)" class="fas fa-minus ml-2"></i>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Add Photos</label>
+                <label for="addPhoto" class="photoLabel py-5">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p class="mb-0">Click here to Upload</p>
+                </label>
+                <input id='addPhoto' class="contactInput my-2" type="file" />
+                <i>Add upto 6 Images</i>
+
+
+            </div>
+            <div>
+                <!-- Added-Gallery -->
+                <div class="productReviewGallery w-100 my-4">
+                    <div class="row no-gutters">
+                        <div class="col-auto m-2">
+                            <div class="d-flex align-items-start">
+                                <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
+                                <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
+                            </div>
+                        </div>
+                        <div class="col-auto m-2">
+                            <div class="d-flex align-items-start">
+                                <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
+                                <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
+                            </div>
+                        </div>
+                        <div class="col-auto m-2">
+                            <div class="d-flex align-items-start">
+                                <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
+                                <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
+                            </div>
+                        </div>
+                        <div class="col-auto m-2">
+                            <div class="d-flex align-items-start">
+                                <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
+                                <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <input class="commonDetailInput my-2"  value="Interior Design" type="text"/>
-                        <i onclick="removeService(event)" class="fas fa-minus ml-2"></i>
-                    </div>
-
                 </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Add Photos</label>
-                    <label for="addPhoto" class="photoLabel py-5">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                        <p class="mb-0">Click here to Upload</p>
-                    </label>
-                    <input id='addPhoto' class="contactInput my-2" type="file"/>
-                    <i>Add upto 6 Images</i>
-                    
+                <!-- Added-Gallery-Slider-Mobile -->
 
-                </div>
-                <div>
-                    <!-- Added-Gallery -->
-                    <div class="productReviewGallery w-100 my-4">
-                        <div class="row no-gutters">
-                            <div class="col-auto m-2">
+                <div class="productReviewGalleryMobile">
+                    <div class="swiper EzUserMyReviewSwiper my-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <div class="d-flex align-items-start">
                                     <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
                                     <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
                                 </div>
                             </div>
-                            <div class="col-auto m-2">
+                            <div class="swiper-slide">
                                 <div class="d-flex align-items-start">
                                     <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
                                     <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
                                 </div>
                             </div>
-                            <div class="col-auto m-2">
+                            <div class="swiper-slide">
                                 <div class="d-flex align-items-start">
                                     <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
                                     <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
                                 </div>
                             </div>
-                            <div class="col-auto m-2">
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-start">
+                                    <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
+                                    <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
                                 <div class="d-flex align-items-start">
                                     <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
                                     <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        <!-- Added-Gallery-Slider-Mobile -->
-        
-                        <div class="productReviewGalleryMobile">
-                            <div class="swiper EzUserMyReviewSwiper my-2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="d-flex align-items-start">
-                                            <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
-                                            <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex align-items-start">
-                                            <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
-                                            <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex align-items-start">
-                                            <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
-                                            <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex align-items-start">
-                                            <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
-                                            <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex align-items-start">
-                                            <img class="productReviewGalleryImg" src="../assets/img/Home_Furniture.webp" alt="">
-                                            <i onclick="closeImg(event)" class="fas fa-times imgCloser"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                 </div>
-                <label class="commonDetailLabel">Add Partner Contact Info</label>
-                <div class="form-group">
-                    <label class="commonSmallLabel">Website</label>
-                    <input class="commonDetailInput my-2" value="www.tareeninterior.com" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonSmallLabel">Instagram</label>
-                    <input class="commonDetailInput my-2" value="Tareeninterior" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonSmallLabel">Facebook</label>
-                    <input class="commonDetailInput my-2" value="Tareeninterior" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonSmallLabel d-flex align-items-start">Call <span class="requiredInput">*</span></label>
-                    <input required class="commonDetailInput my-2" value="+971-3118908080" type="text" placeholder="Mobile Number"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonSmallLabel d-flex align-items-start">Email <span class="requiredInput">*</span></label>
-                    <input required class="commonDetailInput my-2" value="Tareeninterior@gmail.com" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonSmallLabel">Whatsapp</label>
-                    <input class="commonDetailInput my-2" value="+091-3118908080" type="text" placeholder="Mobile Number"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Add location</label>
-                    <input class="commonDetailInput my-2" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Select Business Hours</label>
-                    
-                    <div class="selectedBusinessHours">
-                        <div class="d-flex justify-content-between">
-                            <div class="selectedDay">Sunday</div>
-                            <div class="selectedTime">
-                                <div class="startTime">9:00</div>
-                                <div class="mx-1">-</div>
-                                <div class="endTime mx-1">5:30</div>
-                                <div class="fas fa-times"></div>
-                            </div>
+            </div>
+            <label class="commonDetailLabel">Add Partner Contact Info</label>
+            <div class="form-group">
+                <label class="commonSmallLabel">Website</label>
+                <input class="commonDetailInput my-2" value="www.tareeninterior.com" type="text" />
+            </div>
+            <div class="form-group">
+                <label class="commonSmallLabel">Instagram</label>
+                <input class="commonDetailInput my-2" value="Tareeninterior" type="text" />
+            </div>
+            <div class="form-group">
+                <label class="commonSmallLabel">Facebook</label>
+                <input class="commonDetailInput my-2" value="Tareeninterior" type="text" />
+            </div>
+            <div class="form-group">
+                <label class="commonSmallLabel d-flex align-items-start">Call <span
+                        class="requiredInput">*</span></label>
+                <input required class="commonDetailInput my-2" value="+971-3118908080" type="text"
+                    placeholder="Mobile Number" />
+            </div>
+            <div class="form-group">
+                <label class="commonSmallLabel d-flex align-items-start">Email <span
+                        class="requiredInput">*</span></label>
+                <input required class="commonDetailInput my-2" value="Tareeninterior@gmail.com" type="text" />
+            </div>
+            <div class="form-group">
+                <label class="commonSmallLabel">Whatsapp</label>
+                <input class="commonDetailInput my-2" value="+091-3118908080" type="text" placeholder="Mobile Number" />
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Add location</label>
+                <input class="commonDetailInput my-2" type="text" />
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Select Business Hours</label>
+                <div class="selectedBusinessHours py-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="selectedDay">Sunday</div>
+                        <div class="selectedTime">
+                            <div class="startTime">9:00</div>
+                            <div class="mx-1">-</div>
+                            <div class="endTime mx-1">5:30</div>
+                            <div class="fas fa-times"></div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="selectedBusinessHours">
-                        <div class="d-flex justify-content-between">
-                            <div class="selectedDay">Monday</div>
-                            <div class="selectedTime">
-                                <div class="startTime">9:00</div>
-                                <div class="mx-1">-</div>
-                                <div class="endTime mx-1">5:30</div>
-                                <div class="fas fa-times"></div>
-                            </div>
+                <div class="selectedBusinessHours py-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="selectedDay">Monday</div>
+                        <div class="selectedTime">
+                            <div class="startTime">9:00</div>
+                            <div class="mx-1">-</div>
+                            <div class="endTime mx-1">5:30</div>
+                            <div class="fas fa-times"></div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="selectedBusinessHours">
-                        <div class="d-flex justify-content-between">
-                            <div class="selectedDay">Tuesday</div>
-                            <div class="selectedTime">
-                                <div class="startTime">9:00</div>
-                                <div class="mx-1">-</div>
-                                <div class="endTime mx-1">5:30</div>
-                                <div onclick="removeBusinessHour(event)" class="fas fa-times"></div>
-                            </div>
+                <div class="selectedBusinessHours py-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="selectedDay">Tuesday</div>
+                        <div class="selectedTime">
+                            <div class="startTime">9:00</div>
+                            <div class="mx-1">-</div>
+                            <div class="endTime mx-1">5:30</div>
+                            <div onclick="removeBusinessHour(event)" class="fas fa-times"></div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- <div class="row align-items-center justify-content-between">
+                <!-- <div class="row align-items-center justify-content-between">
                         <input id='sunday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
                         <label for="sunday" class="businessHourBox mr-5">Sun</label>
                         <div class="form-group">
@@ -267,75 +270,181 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="row m-0">
-                        <div class="col-4">
-
-                        </div>
-                        <div class="col-4">
-
-                        </div>
-                        <div class="col-4">
-
+                    <p class="selectDateHeading">Select Date</p>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Mon
                         </div>
                     </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label class="commonDetailLabel">Choose Budget</label>
-                    <ul class="p-0">
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$$</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$$$</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">$$$</label>
-                        </li>
-                        
-                        
-                    </ul>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Tue
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Wed
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Thu
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Fri
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Sat
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row no-gutters selectDateWrap">
+                    <div class="col-3 col-md-4">
+                        <div class="DaySelect">
+                            Sun
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="timeSelect">
+                            <option value="">Opening time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-                </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Choose Cateogories</label>
-                    <ul class="p-0">
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Furniture</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Art</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Accessories</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Bespoke</label>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <input id="firstPrice" type="radio">
-                            <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Preowned</label>
-                        </li>
-                        
-                        
-                        
-                    </ul>
+            <div class="form-group">
+                <label class="commonDetailLabel">Choose Budget</label>
+                <ul class="p-0">
+                    <li class="d-flex align-items-center">
+                        <input id="firstPrice" type="radio">
+                        <label for="firstPrice" class="commonSmallLabel ml-2 mb-0">$</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="secondPrice" type="radio">
+                        <label for="secondPrice" class="commonSmallLabel ml-2 mb-0">$$</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="thirdPrice" type="radio">
+                        <label for="thirdPrice" class="commonSmallLabel ml-2 mb-0">$$$</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="fourthPrice" type="radio">
+                        <label for="fourthPrice" class="commonSmallLabel ml-2 mb-0">$$$$</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Choose Cateogories</label>
+                <ul class="p-0">
+                    <li class="d-flex align-items-center">
+                        <input id="firstPrice" type="radio">
+                        <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Furniture</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="firstPrice" type="radio">
+                        <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Art</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="firstPrice" type="radio">
+                        <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Accessories</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="firstPrice" type="radio">
+                        <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Bespoke</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <input id="firstPrice" type="radio">
+                        <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Preowned</label>
+                    </li>
 
-                </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Choose Tags</label>
-                    <div class="d-flex">
+
+
+                </ul>
+
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Choose Tags</label>
+                <div class="d-flex">
                     <ul class="p-0 mr-3">
                         <li class="d-flex align-items-center">
                             <input id="firstPrice" type="radio">
@@ -357,9 +466,9 @@
                             <input id="firstPrice" type="radio">
                             <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Preowned</label>
                         </li>
-                        
-                        
-                        
+
+
+
                     </ul>
                     <ul class="p-0">
                         <li class="d-flex align-items-center">
@@ -386,40 +495,39 @@
                             <input id="firstPrice" type="radio">
                             <label for="firstPrice" class="commonSmallLabel ml-2 mb-0 ">Furniture</label>
                         </li>
-                        
-                        
-                        
-                        
+
+
+
+
                     </ul>
                 </div>
 
-                </div>
-                <div class="form-group">
-                    <label class="commonDetailLabel">Make Featured</label>
-                    <div class="d-flex align-items-center">
-                        <input id='Yes' name='choice' type="radio"/>
-                        <label for="Yes" class="mx-1 mb-0">Yes</label>
-                        <input id='No' name='choice' type="radio"/>
-                        <label for="No" class="mx-1 mb-0">No</label>
-
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="commonDetailLabel">Make Featured</label>
+                <div class="d-flex align-items-center">
+                    <input id='Yes' name='choice' type="radio" />
+                    <label for="Yes" class="mx-1 mb-0">Yes</label>
+                    <input id='No' name='choice' type="radio" />
+                    <label for="No" class="mx-1 mb-0">No</label>
 
                 </div>
-                <div class="w-100 text-center my-3">
-                    <div class="btn filterBtn py-2">Update</div>
-                </div>
-                
 
-                
+            </div>
+            <div class="w-100 text-center my-3">
+                <div class="btn filterBtn py-2">Update</div>
+            </div>
+
+
+
         </div>
     </div>
     <script>
-        function addService()
-        {
+        function addService() {
             var servicesContainer = document.getElementById('servicesInputContainer')
             var servicesHolder = document.createElement('div')
-            var serviceInput  = document.createElement('input')
-            var serviceCloseIcon  = document.createElement('i')
+            var serviceInput = document.createElement('input')
+            var serviceCloseIcon = document.createElement('i')
             servicesHolder.className = 'd-flex align-items-center'
             serviceCloseIcon.className = 'fas fa-minus ml-2'
             serviceCloseIcon.onclick = removeService;
@@ -427,29 +535,30 @@
             servicesContainer.appendChild(servicesHolder).appendChild(serviceInput)
             servicesContainer.appendChild(servicesHolder).appendChild(serviceCloseIcon)
         }
-        function removeService(event)
-        {
-          let targetvalue = event.target;
-          $(targetvalue).parent().remove(); 
-        }
-        function closeImg(event)
-        {
+
+        function removeService(event) {
             let targetvalue = event.target;
-          $(targetvalue).prev().remove();  
-          $(targetvalue).remove();  
+            $(targetvalue).parent().remove();
+        }
+
+        function closeImg(event) {
+            let targetvalue = event.target;
+            $(targetvalue).prev().remove();
+            $(targetvalue).remove();
 
         }
-        function removeBusinessHour(event)
-        {
+
+        function removeBusinessHour(event) {
             let targetvalue = event.target;
-          $(targetvalue).parent().parent().parent().remove(); 
+            $(targetvalue).parent().parent().parent().remove();
         }
     </script>
-        <script src="../assets/js/jquery/jquery.min.js"></script>
+    <script src="../assets/js/jquery/jquery.min.js"></script>
     <script src="../assets/js/bootstrap/popper.min.js"></script>
     <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/js/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
 
 </body>
+
 </html>
