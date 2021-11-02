@@ -142,117 +142,162 @@
                 </div>
                 <div class="form-group">
                     <label class="commonDetailLabel">Select Business Hours</label>
-                    
-                    <div class="row align-items-center justify-content-between">
-                        <input id='monday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="monday" class="businessHourBox mr-5">Mon</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
+                <div class="selectedBusinessHours py-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="selectedDay">Sunday</div>
+                        <div class="selectedTime">
+                            <div class="startTime">9:00</div>
+                            <div class="mx-1">-</div>
+                            <div class="endTime mx-1">5:30</div>
+                            <div class="fas fa-times"></div>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-between">
-                        <input id='tuesday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="tuesday" class="businessHourBox mr-5">Tue</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-between">
-                        <input id='wednesday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="wednesday" class="businessHourBox mr-5">Wed</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-between">
-                        <input id='thursday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="thursday" class="businessHourBox mr-5">Thurs</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-between">
-                        <input id='friday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="friday" class="businessHourBox mr-5">Fri</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-between">
-                        <input id='saturday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="saturday" class="businessHourBox mr-5">Sat</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-between">
-                        <input id='sunday' name="businessHour" class="businessDisabledInput my-2" type="radio"/>
-                        <label for="sunday" class="businessHourBox mr-5">Sun</label>
-                        <div class="form-group">
-                            <label class="commonSmallLabel">Select Time</label>
-                            <div class="d-flex">
-                                <select class="customSelect">
-                                    <option value="">Opening Time</option>
-                                </select>
-                                <select class="customSelect ml-1">
-                                    <option value="">Closing Time</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    
+                </div>
 
+                <div class="selectedBusinessHours py-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="selectedDay">Monday</div>
+                        <div class="selectedTime">
+                            <div class="startTime">9:00</div>
+                            <div class="mx-1">-</div>
+                            <div class="endTime mx-1">5:30</div>
+                            <div class="fas fa-times"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selectedBusinessHours py-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="selectedDay">Tuesday</div>
+                        <div class="selectedTime">
+                            <div class="startTime">9:00</div>
+                            <div class="mx-1">-</div>
+                            <div class="endTime mx-1">5:30</div>
+                            <div onclick="removeBusinessHour(event)" class="fas fa-times"></div>
+                        </div>
+                    </div>
+                </div>
+
+                    <p class="selectDateHeading">Select Date</p>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Mon
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Tue
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Wed
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Thu
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Fri
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Sat
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters selectDateWrap">
+                        <div class="col-3 col-md-4">
+                            <div class="DaySelect">
+                                Sun
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Opening time</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="timeSelect">
+                                <option value="">Closing time</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="form-group">
