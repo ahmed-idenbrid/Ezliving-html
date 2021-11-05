@@ -233,3 +233,46 @@ font-size: 14px;
 @media screen and (min-height:1050px) {
    
 }
+/* -foot-bar- */
+.footbarContainer
+    {
+        height: 50px;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        box-shadow: -10px 0px 20px #00000012;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .footbarLogo
+    {
+        border: 1px solid #FFC978;   
+        border-radius: 100%;
+        background-color: white;
+        height: 56px;
+        width: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -80%;
+    }
+    .footbarLogo > img
+    {
+        height: 38px;   
+        width: 30px;
+    }
+    .FootIcon,.FootIcon > .fa-star
+    {
+        color:#B5B5B5;
+    }
+    .footbarSingleItem > a:hover,.FootIcon > .fa-star:hover
+    {
+        color:#E0922F;
+    }
+    .footbarSingleItem > a > i
+    {
+        font-size: 26px;
+    }
+    
