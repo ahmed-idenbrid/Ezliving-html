@@ -27,7 +27,59 @@
     .selectDateWrap{
         justify-content: space-between;
     }
-    
+    .commonNavigationTitle{
+        font-size: 18px;
+        padding: 20px 0px;
+        font-weight: bold;
+    }
+    .commonNavigation, .previousNavigation{
+        font-size: 14px;
+    }
+    .addPartnerContainer{
+        padding: 14px;
+    }
+    .partner_search_feild{
+        height: 43px;
+        font-size: 12px;
+    }
+    .single_partner>.info_content>img{
+        height: 43px;
+        width: 43px;
+    }
+    .commonDetailTitle{
+        font-size: 16px;
+    }
+    .single_partner>.info_content>p {
+        font-size: 14px;
+    }
+    .single_partner>a{
+        font-size: 12px;
+        padding: 0px;
+    }
+    .single_partner{
+        padding: 13px;
+        margin: 18px 0px;
+    }
+    .partner_search_feild::placeholder{
+        font-size: 12px;
+    }
+    .searchPartner{
+        display: flex;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .searchPartner>label>i{
+        background-color: #E0922F;
+        color: #fff;
+        width: 45px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 8px 8px 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
     .MyfavoruiteItem{
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -63,7 +115,7 @@
     }
     .NavBarContainer{
         padding: 0px 10px;
-        background: none;
+        /* background: none; */
         box-shadow: none;
     }
     .EzFeatured {
