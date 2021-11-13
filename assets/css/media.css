@@ -1,74 +1,143 @@
-
 @media screen and (min-width:769px) {
-    .v-on-d{    
+    .v-on-d {
         display: block;
     }
-    .v-on-m{    
+
+    .v-on-m {
         display: none;
     }
-    .tabsComponents{
+
+    .tabsComponents {
         justify-content: space-between;
     }
-    .LogoCompanyD{
+
+    .LogoCompanyD {
         display: block;
     }
-    .LogoCompanyM{
+
+    .LogoCompanyM {
         display: none;
     }
-    
-    .selectDateWrap>.col-4{
+
+    .selectDateWrap>.col-4 {
         padding: 0px 10px !important;
     }
-    .selectDateWrap>.col-3{
+
+    .selectDateWrap>.col-3 {
         padding: 0px 10px !important;
     }
 }
+
 @media screen and (max-width:769px) {
-    .selectDateWrap{
+    .approved-tab, .deleted-tab{
+        padding: 30px;
+        height: 525px;
+    }
+    .productReviewGallerypend{
+        display: block !important;
+    }
+    .productReviewGalleryImg{
+        width: 69px;
+        height: 67px;
+    }
+    .productUserNamePending{
+        font-size: 21px;
+    }
+    .productUserDescriptionPending, .productAttributeNamePend{
+        font-size: 12px;
+    }
+    .productAttributeNamepen{
+        font-size: 14px;
+    }
+    .size-20{
+        font-size: 16px;
+    }
+    .update-pending-anker>a {
+        background-color: #E0922F;
+        color: #FFFFFF;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 29px;
+        margin: 18px 5px;
+        font-size: 15px;
+    }
+    .approved-tab>h3,
+    .deleted-tab>h3 {
+        font-size: 14px;
+    }
+
+    .approved-tab>p,
+    .deleted-tab>p {
+        font-size: 50px;
+    }
+    .ModerateReveiewTabs .nav-link{
+        padding: 20px 14px;
+        font-size: 14px;
+        color: #9C9C9C;
+    }
+    .approved-tab>p>span,
+    .deleted-tab>p>span {
+        font-size: 16px;
+    }
+
+    .selectDateWrap {
         justify-content: space-between;
     }
-    .commonNavigationTitle{
+
+    .commonNavigationTitle {
         font-size: 18px;
         padding: 20px 0px;
         font-weight: bold;
     }
-    .commonNavigation, .previousNavigation{
+
+    .commonNavigation,
+    .previousNavigation {
         font-size: 14px;
     }
-    .addPartnerContainer{
+
+    .addPartnerContainer {
         padding: 14px;
     }
-    .partner_search_feild{
+
+    .partner_search_feild {
         height: 43px;
         font-size: 12px;
     }
-    .single_partner>.info_content>img{
+
+    .single_partner>.info_content>img {
         height: 43px;
         width: 43px;
     }
-    .commonDetailTitle{
+
+    .commonDetailTitle {
         font-size: 16px;
     }
+
     .single_partner>.info_content>p {
         font-size: 14px;
     }
-    .single_partner>a{
+
+    .single_partner>a {
         font-size: 12px;
         padding: 0px;
     }
-    .single_partner{
+
+    .single_partner {
         padding: 13px;
         margin: 18px 0px;
     }
-    .partner_search_feild::placeholder{
+
+    .partner_search_feild::placeholder {
         font-size: 12px;
     }
-    .searchPartner{
+
+    .searchPartner {
         display: flex;
         align-items: center;
         margin: 20px 0px;
     }
-    .searchPartner>label>i{
+
+    .searchPartner>label>i {
         background-color: #E0922F;
         color: #fff;
         width: 45px;
@@ -80,7 +149,8 @@
         font-size: 20px;
         cursor: pointer;
     }
-    .MyfavoruiteItem{
+
+    .MyfavoruiteItem {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border-radius: 15px;
@@ -91,166 +161,191 @@
         width: 177px;
         height: 157px;
         margin-left: 0px;
-       /*  margin-top: 20px; */
+        /*  margin-top: 20px; */
     }
+
     .tabsComponents>li>i {
         font-size: 22px;
     }
-    .MyfavoruiteItem>.detailInfo>h5, .MyfavoruiteItem>.detailInfo>h5, .MyfavoruiteItem>.detailInfo>h5{
+
+    .MyfavoruiteItem>.detailInfo>h5,
+    .MyfavoruiteItem>.detailInfo>h5,
+    .MyfavoruiteItem>.detailInfo>h5 {
         color: var(--whiteColor);
         font-size: 13px;
         margin: 0px;
     }
-    .ratingCount{
+
+    .ratingCount {
         font-size: 13px;
         padding: 0px 4px;
     }
-    .reviewsCount{
-    font-size: 11px;
-    padding:0px 5px;
+
+    .reviewsCount {
+        font-size: 11px;
+        padding: 0px 5px;
     }
-    .DollarSign{
+
+    .DollarSign {
         font-size: 13px;
         font-weight: bold;
     }
-    .NavBarContainer{
+
+    .NavBarContainer {
         padding: 0px 10px;
         /* background: none; */
         box-shadow: none;
     }
+
     .EzFeatured {
         width: 200px !important;
         height: 184px
     }
-    .headingFavourite{
+
+    .headingFavourite {
         font-size: 18px;
         text-align: center;
         width: 100%;
         padding: 20px 0px;
     }
-    .mobileLogo{
+
+    .mobileLogo {
         height: 38px !important;
         width: 30px !important;
     }
+
     .seeAllAnker {
         font-size: 12px;
     }
-    .v-on-d{    
+
+    .v-on-d {
         display: none;
     }
-    .h-on-m{    
+
+    .h-on-m {
         display: none;
     }
-    .v-on-m{    
+
+    .v-on-m {
         display: block;
     }
+
     .LogoCompany {
         height: 60px;
         width: 60px;
     }
+
     .SocialIcons {
         width: 160px;
         margin: 0px;
     }
+
     .SocialIcons>li {
         font-size: 26px;
     }
-    .MyfavoruiteItems{
+
+    .MyfavoruiteItems {
         justify-content: space-between;
     }
-    .CredentialsFeilds{
-    justify-content: center;
-    padding: 20px !important;
+
+    .CredentialsFeilds {
+        justify-content: center;
+        padding: 20px !important;
     }
+
     /* MY_REVIEW_PAGE */
-    .productReviewImg,.activity
-    {
+    .productReviewImg,
+    .activity {
         display: none;
     }
-    .productReviewContainer
-    {
+
+    .productReviewContainer {
         padding: 20px;
     }
-    .productUserLikes
-    {
+
+    .productUserLikes {
         font-size: 10px;
         min-width: 80px;
     }
-    .productUserLikes > i
-    {
+
+    .productUserLikes>i {
         font-size: 16px;
         color: var(--primaryClrOrange);
     }
-    .approvedLikes
-    {
+
+    .approvedLikes {
         display: block;
         font-size: 14px;
         font-style: italic;
         color: var(--primaryGreen);
     }
-    .productUserDescription,.productReviewGallery
-    {
+
+    .productUserDescription,
+    .productReviewGallery {
         display: none;
     }
-    .productUserDescriptionMbl,.productReviewGalleryMobile
-    {
+
+    .productUserDescriptionMbl,
+    .productReviewGalleryMobile {
         display: block;
     }
+
     .filterBtn {
         font-size: 16px;
     }
-    .socialLinks > ul >li
-    {
+
+    .socialLinks>ul>li {
         margin-right: 0.5rem !important;
     }
-    .socialLinks > ul >li>a
-    {
+
+    .socialLinks>ul>li>a {
         font-size: 16px;
         padding: 6px 9px;
     }
-    .reviewTitle,.singleReviewData
-    {
+
+    .reviewTitle,
+    .singleReviewData {
         margin-left: 0 !important;
     }
-    .productReviewBody
-    {
+
+    .productReviewBody {
         padding: 5px;
     }
-    .commonDetails
-    {
+
+    .commonDetails {
         margin-top: 20px;
     }
-    .customSelect
-    {
+
+    .customSelect {
         padding: 5px 10px;
     }
-    .businessHourBox
-    {
+
+    .businessHourBox {
         font-size: 12px;
         min-width: 140px;
     }
-    .p-sm-off
-    {
+
+    .p-sm-off {
         padding: 0 !important;
     }
-    .p-sm-on
-    {
-        padding-inline:15px !important;
+
+    .p-sm-on {
+        padding-inline: 15px !important;
     }
-    .selectedDay
-{
-font-size: 14px;
-}
-    .selectedTime
-    {
+
+    .selectedDay {
+        font-size: 14px;
+    }
+
+    .selectedTime {
         font-size: 12px;
-        color:grey;
+        color: grey;
     }
 }
 
 
 @media screen and (max-width:320px) {
-    .MyfavoruiteItem{
+    .MyfavoruiteItem {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border-radius: 15px;
@@ -262,10 +357,16 @@ font-size: 14px;
         height: 129px;
         /* margin-left: 10px;
         margin-top: 20px; */
-    }  
+    }
+    .ModerateReveiewTabs .nav-link{
+        padding: 20px 7px;
+        font-size: 14px;
+        color: #9C9C9C;
+    }
 }
+
 @media only screen and (min-width:414px) and (max-width:420px) {
-    .MyfavoruiteItem{
+    .MyfavoruiteItem {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border-radius: 15px;
@@ -279,52 +380,51 @@ font-size: 14px;
         margin-top: 20px; */
     }
 }
-@media screen and (max-width:1466px) {
-   
-}
-@media screen and (min-height:1050px) {
-   
-}
-/* -foot-bar- */
-.footbarContainer
-    {
-        height: 50px;
-        background-color: white;
-        position: fixed;
-        bottom: 0;
-        box-shadow: -10px 0px 20px #00000012;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-    }
-    .footbarLogo
-    {
-        border: 1px solid #FFC978;   
-        border-radius: 100%;
-        background-color: white;
-        height: 56px;
-        width: 56px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: -80%;
-    }
-    .footbarLogo > img
-    {
-        height: 38px;   
-        width: 30px;
-    }
-    .FootIcon,.FootIcon > .fa-star
-    {
-        color:#B5B5B5;
-    }
-    .footbarSingleItem > a:hover,.FootIcon > .fa-star:hover
-    {
-        color:#E0922F;
-    }
-    .footbarSingleItem > a > i
-    {
-        font-size: 26px;
-    }
-    
+@media screen and (max-width:1466px) {}
+
+@media screen and (min-height:1050px) {}
+
+/* -foot-bar- */
+.footbarContainer {
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    box-shadow: -10px 0px 20px #00000012;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footbarLogo {
+    border: 1px solid #FFC978;
+    border-radius: 100%;
+    background-color: white;
+    height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80%;
+}
+
+.footbarLogo>img {
+    height: 38px;
+    width: 30px;
+}
+
+.FootIcon,
+.FootIcon>.fa-star {
+    color: #B5B5B5;
+}
+
+.footbarSingleItem>a:hover,
+.FootIcon>.fa-star:hover {
+    color: #E0922F;
+}
+
+.footbarSingleItem>a>i {
+    font-size: 26px;
+}

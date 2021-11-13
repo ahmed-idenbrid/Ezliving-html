@@ -709,8 +709,8 @@ body {
 }
 
 .productReviewGalleryImg {
-    width: 96px;
-    min-height: 96px;
+    width: 117px;
+    height: 116px;
     border-radius: 17px;
 }
 
@@ -1288,7 +1288,8 @@ body {
     padding: 16px;
     margin: 25px 0px;
 }
-.partner_search_feild{
+
+.partner_search_feild {
     width: 100%;
     background-color: rgba(224, 146, 47, 0.1);
     box-shadow: 0px 10px 30px #00000008;
@@ -1297,21 +1298,25 @@ body {
     border: none;
     padding: 20px;
 }
-.partner_search_feild::placeholder{
+
+.partner_search_feild::placeholder {
     letter-spacing: 0px;
     font-size: 20px;
     color: #F6BD74;
 }
-.searchPartner{
+
+.searchPartner {
     display: flex;
     align-items: center;
     margin: 40px 0px;
 }
-.searchPartner>label{
+
+.searchPartner>label {
     margin: 0px;
     padding: 0px;
 }
-.searchPartner>label>i{
+
+.searchPartner>label>i {
     background-color: #E0922F;
     color: #fff;
     width: 106px;
@@ -1323,7 +1328,8 @@ body {
     font-size: 40px;
     cursor: pointer;
 }
-.single_partner>a{
+
+.single_partner>a {
     display: block;
     color: #E0922F;
     font-size: 21px;
@@ -1350,4 +1356,137 @@ body {
     color: #4A4A4A;
     margin: 0px;
     padding-left: 20px;
+}
+
+.ModerateReveiewsTabs {
+    padding: 0px;
+}
+
+
+
+.approved-tab,
+.deleted-tab {
+    text-align: center;
+    padding: 100px;
+    background-color: #fff;
+}
+
+.approved-tab>h3,
+.deleted-tab>h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+.approved-tab>p,
+.deleted-tab>p {
+    font-size: 113px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #E0922F;
+}
+
+.approved-tab>p>span,
+.deleted-tab>p>span {
+    font-size: 31px;
+    color: #9C9C9C;
+    font-weight: 500;
+}
+
+.ModerateReveiewTabs {
+    border: none;
+}
+
+.ModerateReveiewTabs .nav-link {
+    padding: 20px 85px;
+    font-size: 22px;
+    color: #9C9C9C;
+}
+
+.ModerateReveiewTabs .nav-link.active {
+    color: #E0922F;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E0922F;
+}
+
+.pending-tab, .dispute-tab {
+    min-height: 600px;
+    background-color: transparent;
+}
+
+.productUserNamePending {
+    font-size: 29px;
+    color: #4A4A4A;
+    font-weight: 600;
+}
+
+.productUserDescriptionPending {
+    font-size: 16px;
+    color: #A1A1A1;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.productAttributeNamePend {
+    font-size: 17px;
+    color: #B7B5B5;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.postedName {
+    color: #B7B5B5;
+}
+
+.productAttributeNamepen {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.size-20 {
+    font-size: 20px;
+}
+
+.title-prod {
+    font-size: 17px;
+}
+
+.title-name {
+    font-size: 20px;
+    color: #9C9C9C;
+}
+
+.productReviewDescription {
+    font-size: 16px;
+    color: #8D8686;
+}
+
+.update-pending-anker {
+    display: flex;
+    justify-content: center;
+}
+
+.update-pending-anker>a {
+    background-color: #E0922F;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 29px;
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+.delete-anker {
+    background-color: #FF6E6E !important;
+}
+
+.dispute-anker {
+    background-color: #ABAAAA !important;
+    border: 2px solid #ABAAAA;
+}
+.productReviewBody{
+    margin: 5px 0px;
+    background-color: #fff;
+    padding: 30px;
 }
