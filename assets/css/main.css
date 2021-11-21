@@ -327,7 +327,7 @@ body {
 }
 
 .TextMessage {
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -340,6 +340,7 @@ body {
 }
 
 .CredentialsFeilds {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
